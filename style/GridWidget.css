@@ -1,0 +1,208 @@
+body{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    min-width:1143px;
+    font-family:Helvetica !important;
+    color:#000;
+    font-size:14px;
+}
+
+.search{
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    width:210px;
+    height:27px;
+    padding:3px 0 0 5px;
+    margin:0px 0px 5px 0px;
+    float:left;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.pageSize
+{
+    float:left;
+    margin-top: 10px;
+    margin-left:35%;
+    padding-right:15px;
+    vertical-align:middle;
+}
+
+.searchTxtBox{
+    height:20px;
+    background : transparent none repeat scroll 20;
+    color:#000;
+    font-family:Helvetica;
+    font-size:14px;
+    width:170px;
+}
+
+.previousButton
+{
+    float:left;
+}
+
+.nextButton
+{
+    float:left;
+    margin-right:5px;
+}
+
+.currentPage
+{
+    float: left;
+    font-size:16px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:5px;
+}
+
+.pagination
+{
+    float:right;
+    display:table;
+}
+
+.current
+{
+    display:table-cell;
+    margin-top: 10px;
+    margin-bottom:10px;
+    float:left;
+    padding-left:7px;
+}
+.arrowNext ,.arrowNextEnable{
+    position:relative;
+    float:left;
+    width:16px;
+    height: 3px;
+    margin-top: 16px;
+    background:#000;
+}
+
+.arrowNextEnable{
+    background:white;
+}
+
+.arrowNext:before, .arrowNextEnable:before {
+    content:"";
+    display:block;
+    position: absolute;
+    left: 6px;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    border-width: 0px 3px 3px 0px;
+    border-style: solid;
+    border-color: #000;
+    background: transparent;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrowNextEnable:before{
+    border-color: white;
+}
+
+.arrowPrev, .arrowPrevEnable {
+    position:relative;
+    float:left;
+    width:16px;
+    height: 3px;
+    margin-top: 16px;
+    background:#000;
+}
+
+.arrowPrevEnable {
+    background: white;
+}
+
+.columnLabel {
+    cursor: pointer;
+}
+
+.arrowPrev:before , .arrowPrevEnable:before{
+    content:"";
+    display:block;
+    position: absolute;
+    right: 6px;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    border-width: 0px 3px 3px 0px;
+    border-style: solid;
+    border-color: #000;
+    background: transparent;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrowPrevEnable:before{
+    border-color: white;
+}
+.arrowPrevBox{
+float:left;
+position: relative;
+width: 17px;
+height: 30px;
+cursor: pointer;
+margin-top: -3px;
+}
+
+.arrowNextBox{
+float:left;
+position: relative;
+width: 17px;
+height: 30px;
+cursor: pointer;
+margin-top: -3px;
+}
+
+table.nstcustomtable
+{
+    border-width: 1px;
+    border-color: #000000;
+    border-collapse: collapse;
+    clear:both;
+    table-layout:fixed;
+    overflow:hidden;
+}
+
+table.nstcustomtable th
+{
+	border: 1px solid;
+	padding:4px 4px 8px 4px;
+    overflow: hidden;
+    position:initial;
+    color:#000;
+    text-align:left;
+    font-size:14px;
+    font-weight:normal;
+}
+table.nstcustomtable td
+{
+	border: 1px solid #000;
+	padding: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    font-size:14px;
+}
+
+table.nstcustomtable tr:nth-child(even) td{background-color: #fff;}
+
+table.nstcustomtable tr:nth-child(odd) td{background-color: #B2C6D1;}
+
+table.nstcustomtable a
+{
+    color : #000;
+    text-decoration: none;
+}
+
+table.nstcustomtable a:hover
+{
+    color : #CCC;
+    text-decoration: none;
+}
