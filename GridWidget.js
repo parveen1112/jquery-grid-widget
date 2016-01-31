@@ -683,34 +683,3 @@ var GridWidget = {
 
 };
 $.widget( "Custom.GridWidget", GridWidget);
-
-/*
-var HostsVulnerabilities = [];
-HostsVulnerabilities.push({id:1,hostProfileName:'host1'});
-HostsVulnerabilities.push({id:2,hostProfileName:'host2'});
-HostsVulnerabilities.push({id:3,hostProfileName:'host3'});
-HostsVulnerabilities.push({id:4,hostProfileName:'host4'});
-HostsVulnerabilities.push({id:5,hostProfileName:'host5'});
-
-function obtainGridFormatData()
-{
-    var nodeHeaders = [];
-    var nodeData = [];
-
-    header = {dataType:"string",fieldName:"Host ID",type:"header",sortField:"nodeid"};
-    nodeHeaders.push(header);
-    header = {dataType:"string",fieldName:"Host Profile",type:"header",sortField:"hostname"};
-    nodeHeaders.push(header);
-
-    for(var i=0; i<HostsVulnerabilities.length; i++)
-    {
-        var rowList = [];
-        var id = HostsVulnerabilities[i].id;
-        var json = {dataType:"string",fieldName:'Host: ' + HostsVulnerabilities[i].id,type:"onclick",functionName:"OpenVulnDetails(" + id + ")"};
-        rowList.push(json);
-        var json = {dataType:"string",fieldName:HostsVulnerabilities[i].hostProfileName,type:"text",url:""};
-        rowList.push(json);
-        nodeData.push(rowList);
-    }
-    return {count:HostsVulnerabilities.length, headers:nodeHeaders, records:nodeData, previous:null,next:null};
-}*/
