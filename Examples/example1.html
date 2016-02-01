@@ -2,10 +2,10 @@
 <html>
 </head>
     <title>Grid Renderer Example</title>
+    <link rel="stylesheet" href="../style/GridWidget.css">
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="../GridWidget.js"></script>
-    <link rel="stylesheet" href="../style/GridWidget.css">
 </head>
 <body>
     <h1>Grid Widget Example</h1>
@@ -20,37 +20,38 @@
         HostsVulnerabilities.push({id:5,hostProfileName:'host5'});
 
         function obtainGridFormatData() {
-            var nodeHeaders = [];
-            var nodeData = [];
-
-            header = {dataType: "string", fieldName: "Host ID", type: "header", sortField: "nodeid"};
-            nodeHeaders.push(header);
-            header = {dataType: "string", fieldName: "Host Profile", type: "header", sortField: "hostname"};
-            nodeHeaders.push(header);
-
-            for (var i = 0; i < HostsVulnerabilities.length; i++) {
-                var rowList = [];
-                var id = HostsVulnerabilities[i].id;
-                var json = {
-                    dataType: "string",
-                    fieldName: 'Host: ' + HostsVulnerabilities[i].id,
-                    type: "onclick",
-                    functionName: "OpenVulnDetails(" + id + ")"
-                };
-                rowList.push(json);
-                var json = {
-                    dataType: "string",
-                    fieldName: HostsVulnerabilities[i].hostProfileName,
-                    type: "text",
-                    url: ""
-                };
-                rowList.push(json);
-                nodeData.push(rowList);
-            }
             return {
-                count: HostsVulnerabilities.length,
-                headers: nodeHeaders,
-                records: nodeData,
+                count: 6,
+                headers: [
+                    {dataType: "string", fieldName: "Host ID", type: "header", sortField: "nodeid"},
+                    {dataType: "string", fieldName: "Host ID", type: "header", sortField: "nodeid"}
+                ],
+                records: [
+                    [
+                        {dataType: "string", fieldName: "test: 1", type: "hyperlink", url: "#"},
+                        {dataType: "string", fieldName: "test1", type: "text"}
+                    ],
+                    [
+                        {dataType: "string", fieldName: "test: 2", type: "hyperlink", url: "#"},
+                        {dataType: "string", fieldName: "test2", type: "text"}
+                    ],
+                    [
+                        {dataType: "string", fieldName: "test: 3", type: "hyperlink", url: "#"},
+                        {dataType: "string", fieldName: "test3", type: "text"}
+                    ],
+                    [
+                        {dataType: "string", fieldName: "test: 4", type: "hyperlink", url: "#"},
+                        {dataType: "string", fieldName: "test4", type: "text"}
+                    ],
+                    [
+                        {dataType: "string", fieldName: "test: 5", type: "hyperlink", url: "#"},
+                        {dataType: "string", fieldName: "test5", type: "text"}
+                    ],
+                    [
+                        {dataType: "string", fieldName: "test: 6", type: "hyperlink", url: "#"},
+                        {dataType: "string", fieldName: "test6", type: "text"}
+                    ]
+                ],
                 previous: null,
                 next: null
             };
