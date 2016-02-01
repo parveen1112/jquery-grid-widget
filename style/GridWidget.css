@@ -73,7 +73,7 @@ body{
     float:left;
     padding-left:7px;
 }
-.arrowNext {
+.arrowNext ,.arrowNextEnable{
     position:relative;
     float:left;
     width:16px;
@@ -115,6 +115,10 @@ body{
     background:#000;
 }
 
+.arrowPrevEnable {
+    background: #000000;
+}
+
 .columnLabel {
     cursor: pointer;
 }
@@ -138,7 +142,6 @@ body{
 .arrowPrevEnable:before{
     border-color: #000000;
 }
-
 .arrowPrevBox{
     float:left;
     position: relative;
