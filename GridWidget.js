@@ -667,7 +667,9 @@ var GridWidget = {
             this._requestData(this._getURL());
         }
     },
+    _gridFormatData : function(headers, data){
 
+    },
     // Removing the data from the grid
     _removeTable : function() {
         var datatable = $(this.element).find('.nstcustomtable');
